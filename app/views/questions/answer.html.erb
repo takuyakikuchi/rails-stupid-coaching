@@ -1,20 +1,15 @@
-<div class="container">
-  <h1>Stupid Coaching</h1>
+<%= render "shared/title" %>
 
-  <div class="card mb-3">
-    <div class="question card-body">
-      <p><%= params[:question] %></p>
-      <p>-You</p>
-    </div>
+<main>
+  <div class="box queston">
+    <p class="sentense"><%= params[:question] %></p>
+    <p class="person">-You</p>
   </div>
 
-  <div class="card">
-    <div class="answer card-body bg-info text-white">
-      <p><%= @answer %></p>
-      <p>-Your coach</p>
-    </div>
+  <div class="box answer">
+    <p class="sentense"><%= @answer %></p>
+    <p class="person">-Your coach</p>
   </div>
 
-
-<%= link_to "Ask a new question", ask_path %>
-</div>
+  <%= link_to "Ask a new question", ask_path %>
+</main>

@@ -1,11 +1,15 @@
-<div class="container">
-  <h1>Stupid Coaching</h1>
-  <p class="mb-0">Ask your coach anything:</p>
+<%= render "shared/title" %>
 
-  <form action="answer">
-    <div class="form-group">
-      <input type="text" name="question" class="form-control mb-1">
-      <input type="submit" value="Ask!" class="btn btn-primary">
-    </div>
-  </form>
-</div>
+<main>
+  <div class="question">
+    <label for="question">Ask your coach anything:</label>
+    <form action="answer">
+      <div class="form-group input-group">
+        <input type="text" name="question" id="question" class="form-control">
+        <div class="input-group-append">
+          <input type="submit" value="Ask" class="btn btn-primary">
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
